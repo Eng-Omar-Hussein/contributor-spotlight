@@ -153,13 +153,13 @@ function ContributorDetails(props) {
                             textAlign='center'
                             color='#0096FF'
                         >
-                            {props.data.asciidoc.pageAttributes.pronouns ??
+                            {props.data.asciidoc.pageAttributes.pronouns ||
                                 'They/them'}
                         </Typography>
                     </Box>
                     <Box sx={{ paddingBottom: 1.5 }}>
                         <Typography variant='h6' textAlign='center'>
-                            {props.data.asciidoc.pageAttributes.location ??
+                            {props.data.asciidoc.pageAttributes.location ||
                                 'World'}
                         </Typography>
                         {props.data.asciidoc.pageAttributes.firstcommit &&
